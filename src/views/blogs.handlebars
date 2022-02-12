@@ -1,0 +1,33 @@
+<div class="container my-4">
+<h2 class="my-3">This is blogs page</h2>
+{{#each blog}}
+<div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-dark"><span class="badge text-dark bg-light">{{this.slug}}</span></strong>
+            <h3 class="mb-0">{{this.title}}</h3>
+            <div class="mb-1 text-muted">{{this.publishedOn}}</div>
+            <a href="blogs/blogpost/{{this._id}}" class="stretched-link text-danger">Continue reading...</a>
+        </div>
+      </div>
+    </div>
+{{/each}}
+</div>
+
+
+
+
+{{!-- <ul>
+
+{{#each blog}}
+<li>
+    <h2>
+    {{#each this}}
+    <a href="blogs/blogpost/{{this._id}}">
+        {{this.title}}
+    </a>
+    {{/each}}
+    </h2>
+</li>
+{{/each}}
+</ul> --}}

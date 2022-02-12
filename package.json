@@ -1,0 +1,17 @@
+{
+  "name": "blogapi",
+  "version": "1.0.0",
+  "description": "this is my blog website trial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "arsh sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^5.3.5",
+    "mongoose": "^6.1.9",
+    "nodemon": "^2.0.15"
+  }
+}
